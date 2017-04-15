@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>MyFirstApp</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Playfair+Display:900|Raleway:300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript" src="js/p5.js"></script>
+</head>
+
+<body>
+    <div class="flex-container">
+        <h1> Today's To Do List</h1>
+        <br>
+        <form>
+            <input id="newTask" autocomplete='off' type="text" name="task">
+        </form>
+        <br>
+        <button>Add a New Task!</button>
+        <br>
+    </div>
+    <div class="container">
+        <div class="listBox" id="toDo">
+            <h2>To Do</h2>
+            <ul id="toDolist"></ul>
+
+        </div>
+
+        <div class="listBox" id="finished">
+            <h2>Completed</h2>
+            <ul id="finishedList">
+            </ul>
+        </div>
+    </div>
+    <div class="p5Container">
+        <canvas src="js/sketch.html"></canvas>
+        <!-- <iframe class="p5Container" src="js/sketch.html" scrolling="no" ></iframe> -->
+    </div>
+</body>
+<script type="text/javascript" src="js/script.js"></script>
+
+</html>
